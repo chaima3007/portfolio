@@ -250,7 +250,8 @@ input, textarea{
     width: 230px;
 }
 
-/* donner la forme responsive */
+
+
 @media screen and (max-width: 768px){
     .profil{
         flex-direction: column;
@@ -278,7 +279,7 @@ input, textarea{
         width: 250px;
     }
 }
-/* pour le smartphone */
+
 @media screen and (max-width: 480px){
     .profil img{
         width: 100px;
