@@ -93,17 +93,40 @@ h2{
 
 }
 .technologies div{
-    background-color: #FF9D23;
+    
     padding: 10px;
     border-radius: 10px;
     color: #ffffff;
     transition: all 0.1s;
 }
-.technologies div:hover{
-    background-color: #ffffff;
+#html{
+    background-color: #FF9D23;}
+#css{
+    background-color: #FB9EC6;
+}
+#js{
+    background-color: #1F509A;
+}
+#php{
+    background-color: #FF4545;
+}
+#sql{
+    background-color: #B1D690;
+}
+#bootstrap{
+    background-color: #FEEC37;
+}
+#jquery{
+    background-color: #80C4E9;
+}
+#symfony{
+    background-color: #673F69;
+}
+
+#html:hover,#css:hover,#js:hover,#php:hover,#sql:hover,#bootstrap:hover,#jquery:hover,#symfony:hover{   
+    background: #ffffff;
     border: solid 2px #FF9D23;
     color: #FF9D23;
-    padding: 11px;
 }
 h3{
     font-size: 2rem;
