@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    background-color: black;
+    color: #ffffff;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* width: 60%; */
+    gap: 30px;
+}
+nav a{
+color: #ffffff;
+font-size: 1.2rem;
+}
+nav a:hover,
+nav a.active{
+    color: #FF9D23;
+    border-bottom: 3px solid #FF9D23;
+
+}
+.profil{
+    width: 100%;
+    background-color: #FF9D23;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.profil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.profil-info{
+    width: 50%;
+    padding: 20px;
+}
+h2{
+    font-size: 3rem;
+  
+    margin: 30px 30px;
+}
+.competences{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+.competences-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 20px 20px; */
+    padding: 30px;
+
+}
+.technologies, .competences-info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+
+}
+.technologies{
+    gap: 10px;
+   
+   
+
+}
+.technologies div{
+    background-color: #FF9D23;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all 0.1s;
+}
+.technologies div:hover{
+    background-color: #ffffff;
+    border: solid 2px #FF9D23;
+    color: #FF9D23;
+    padding: 11px;
+}
+h3{
+    font-size: 2rem;
+    margin: 20px 20px;
+
+}
+.competence-box{
+    width: 350px;
+    min-height: 400px;
+    margin: 10px 10% ;
+    background: #80C4E9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+.competence-box:hover{
+    width: 360px;
+    min-height: 410px;
+    border: solid 2px #FF9D23;
+
+}
+.competence-box p{
+text-align: left;
+padding: 1rem;
+}
+.projets{
+    background-color: #FF9D23;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+.projets-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 100%;
+    padding: 30px;
+}
+h4{
+    font-size: 2rem;
+    margin: 20px 20px;
+
+}
+.projet-box{
+    width: 300px;
+    height: 350px;
+    margin: 1rem;
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.projet-info{
+    text-align: left;
+    padding: 1rem;
+}
+.btn-info{
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+.contact{
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+    width: 60%;
+}
+.input-group{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.input-box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+input, textarea{
+    width: 95%;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem ;
+    
+}
+.btn{
+    background-color: #FF9D23;
+    padding: 1rem;
+    width: 200px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #ffffff;
+    border: solid 2px #FF9D23;
+    color: #FF9D23;
+    width: 230px;
+}
+
+/* donner la forme responsive */
+@media screen and (max-width: 768px){
+    .profil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profil-info{
+        width: 100%;
+    }
+    .profil img{
+        width: 150px;
+        height: 150px;
+    }
+  
+ 
+    .projet-info{
+        padding: 0.5rem;
+    }
+    .contact form{
+        width: 90%;
+    }
+    .input-box{
+        width: 100%;
+    }
+    .btn{
+        width: 250px;
+    }
+}
+/* pour le smartphone */
+@media screen and (max-width: 480px){
+    .profil img{
+        width: 100px;
+        height: 100px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        /* width: 60%; */
+        gap: 30px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .competence-box{
+        width: 300px;
+        min-height: 300px;
+    }
+    .projet-box{
+        width: 250px;
+        min-height: 250px;
+    }
+    .projet-info{
+        padding: 0.5rem;
+    }
+    .contact form{
+        width: 90%;
+    }
+    .input-box{
+        width: 100%;
+    }
+    .btn{
+        width: 150px;
+    }
+}
